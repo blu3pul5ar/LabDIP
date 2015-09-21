@@ -20,7 +20,7 @@ import java.text.NumberFormat;
 public class Startup {
  
     public static void main(String[] args) {
-        TipService tipService = new TipService(new BaggageServiceTipCalculator(ServiceQuality.GOOD, -1));
+        TipService tipService = new TipService(new BaggageServiceTipCalculator(ServiceQuality.GOOD, 5));
         NumberFormat nf = NumberFormat.getCurrencyInstance();
         System.out.println(nf.format(tipService.getTip()));
     }
