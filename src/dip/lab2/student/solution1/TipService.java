@@ -18,15 +18,27 @@ public class TipService {
         this.tipCalc = tipCalc;
     }
 
-    public TipCalculator getTipCalc() {
+    /**
+     *
+     * @return tipCalc
+     */
+    public final TipCalculator getTipCalc() {
         return tipCalc;
     }
 
-    public void setTipCalc(TipCalculator tipCalc) {
+    /**
+     *sets tipCalc to what is passed in
+     * @param tipCalc
+     */
+    public final void setTipCalc(TipCalculator tipCalc) {
         this.tipCalc = tipCalc;
     }
     
-    public double getTip(){
+    /**
+     *
+     * @return tip using the set tipCalc
+     */
+    public final double getTip(){
         return tipCalc.getTip();
     }
 }
