@@ -10,19 +10,19 @@ public class SalariedEmployee implements Employee {
     }
 
     @Override
-    public double getAnnualWages() {
+    public final double getAnnualWages() {
         return annualSalary + annualBonus;
     }
 
-    public double getAnnualBonus() {
+    public final double getAnnualBonus() {
         return annualBonus;
     }
 
-    public void setAnnualBonus(double annualBonus) {
+    public final void setAnnualBonus(double annualBonus) {
         this.annualBonus = annualBonus;
     }
 
-    public void setAnnualSalary(double annualSalary) {
+    public final void setAnnualSalary(double annualSalary) {
         this.annualSalary = annualSalary;
     }
     
