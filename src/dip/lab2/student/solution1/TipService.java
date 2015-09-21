@@ -27,6 +27,6 @@ public class TipService {
     }
     
     public double getTip(){
-        return tipCalc.getBill();
+        return tipCalc.getTip();
     }
 }
