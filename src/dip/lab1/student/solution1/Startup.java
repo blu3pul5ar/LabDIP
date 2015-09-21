@@ -24,7 +24,7 @@ public class Startup {
         // doesn't break if we add/subtract employees from array
         for(int i=0; i < employees.length; i++) {
             System.out.println("Employee " + (i+1) + " compensation:" +
-            nf.format(hr.getAnnualCompensationForEmployee(employees[i])));
+            nf.format(hr.getAnnualPay(employees[i])));
         }
     }
 }
